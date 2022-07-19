@@ -1,0 +1,42 @@
+﻿@model IEnumerable<NetFranco.Models.Movie> 
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+
+<button class="btn btn-primary text-white">@Html.ActionLink("New", "Add", "Movies")</button>
+@if (!Model.Any())
+{
+    <p>There aren't movies to rent'</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+        <th>Name</th>
+        <th>Genre</th>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+
+
+                <tr>
+
+                    <td>@Html.ActionLink(movie.Name, "Edit", "Movies", new { id = movie.Id }, null)</td>
+                    <td>@movie.Genre.Name</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
+
+
+
+
+
+
+
