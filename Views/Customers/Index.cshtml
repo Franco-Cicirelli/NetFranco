@@ -5,6 +5,8 @@
 }
 
 <h2>Customers</h2>
+<button id="customer-new-button" class="btn btn-success text-white">@Html.ActionLink("New", "New", "Customers")</button>
+<br />
 @if (! Model.Any())
 {
     <p>No one has rented this movie before.</p>

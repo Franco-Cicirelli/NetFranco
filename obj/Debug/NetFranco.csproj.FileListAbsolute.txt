@@ -119,3 +119,11 @@ C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.PopulateGenre.resources
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.PopulateMovies.resources
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.InitialModel2.resources
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.SomeNewChanges.resources
+C:\C#\NetFranco\NetFranco\bin\System.Net.Http.Formatting.dll
+C:\C#\NetFranco\NetFranco\bin\System.Web.Http.dll
+C:\C#\NetFranco\NetFranco\bin\System.Web.Http.WebHost.dll
+C:\C#\NetFranco\NetFranco\bin\System.Net.Http.Formatting.xml
+C:\C#\NetFranco\NetFranco\bin\System.Web.Http.xml
+C:\C#\NetFranco\NetFranco\bin\System.Web.Http.WebHost.xml
+C:\C#\NetFranco\NetFranco\bin\AutoMapper.dll
+C:\C#\NetFranco\NetFranco\bin\AutoMapper.xml

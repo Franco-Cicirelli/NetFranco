@@ -36,3 +36,7 @@ textarea {
 .input-validation-error {
     border:2px solid red;
 }
+
+#customer-new-button {
+    text-decoration:none;
+}

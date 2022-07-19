@@ -6,7 +6,8 @@
 
 <h2>Movies</h2>
 
-<button class="btn btn-primary text-white">@Html.ActionLink("New", "Add", "Movies")</button>
+<button class="btn btn-success text-white">@Html.ActionLink("New", "Add", "Movies")</button>
+<br />
 @if (!Model.Any())
 {
     <p>There aren't movies to rent'</p>
