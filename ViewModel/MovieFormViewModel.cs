@@ -19,14 +19,15 @@ namespace NetFranco.ViewModel
 
         [Display(Name = "Release Date")]
         [Required]
-        public DateTime ReleaseDate { get; set; }
+        public DateTime? ReleaseDate { get; set; }
 
 
         [Display(Name = "Genre")]
-        public byte GenreId { get; set; }
+        public byte? GenreId { get; set; }
 
-        [Required]
+        [Display(Name = "Number in stock")]
         [Range(1, 20, ErrorMessage = "Please enter a number between 1 to 20")]
+        [Required]
         public int Stock { get; set; }
 
         public string FormType {
@@ -39,7 +40,7 @@ namespace NetFranco.ViewModel
 
         public MovieFormViewModel()
         {
-
+            Id = 0;
         }
 
         public MovieFormViewModel(Movie movie)
