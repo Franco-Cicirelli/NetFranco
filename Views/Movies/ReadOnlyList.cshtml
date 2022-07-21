@@ -1,0 +1,51 @@
+﻿@model IEnumerable<NetFranco.Models.Movie>
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+
+<button class="btn btn-primary text-white">@Html.ActionLink("New", "Add", "Movies")</button>
+
+    <table id="movies" class="table table-bordered table-hover">
+        <thead>
+        <th>Name</th>
+        <th>Genre</th>
+        
+        </thead>
+        <tbody>
+          
+        </tbody>
+    </table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            var table = $("#movies").DataTable({
+                ajax: {
+                    url: "/api/movies",
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "name",
+                    },
+                    {
+                        data: "genre.name"
+                    }
+                ]
+            });
+
+           
+        });
+    </script>
+}
+
+
+
+
+
+

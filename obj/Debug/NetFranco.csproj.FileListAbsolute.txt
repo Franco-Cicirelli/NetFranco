@@ -127,3 +127,6 @@ C:\C#\NetFranco\NetFranco\bin\System.Web.Http.xml
 C:\C#\NetFranco\NetFranco\bin\System.Web.Http.WebHost.xml
 C:\C#\NetFranco\NetFranco\bin\AutoMapper.dll
 C:\C#\NetFranco\NetFranco\bin\AutoMapper.xml
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.SeedUsers.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddDrivingLicenseToApplicationUser.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddPhoneNumberToApplication.resources

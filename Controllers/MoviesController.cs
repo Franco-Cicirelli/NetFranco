@@ -20,9 +20,10 @@ namespace NetFranco.Controllers
         // GET: Movies/Random
         public ViewResult Random()
         {
-            var movies = _context.Movies.Include(m => m.Genre).ToList();
-
-            return View(movies);
+            if (User.IsInRole(RoleName.CanManageMovies))
+                return View("Random");
+            
+            return View("ReadOnlyList");
 
         }
 
@@ -36,6 +37,7 @@ namespace NetFranco.Controllers
             return View(movie);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Add()
         {
             var genres = _context.Genres.ToList();
@@ -49,6 +51,7 @@ namespace NetFranco.Controllers
             return View("MovieForm",viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.SingleOrDefault(x => x.Id == id);
@@ -67,6 +70,7 @@ namespace NetFranco.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Save(Movie movie)
         {
             if (!ModelState.IsValid)

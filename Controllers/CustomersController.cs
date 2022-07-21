@@ -86,6 +86,7 @@ namespace NetFranco.Controllers
         }
 
         // GET: Customers
+        
         public ViewResult Index()
         {
             return View();
