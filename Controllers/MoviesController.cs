@@ -38,6 +38,7 @@ namespace NetFranco.Controllers
         }
 
         [Authorize(Roles = RoleName.CanManageMovies)]
+        
         public ActionResult Add()
         {
             var genres = _context.Genres.ToList();
@@ -87,6 +88,7 @@ namespace NetFranco.Controllers
             if (movie.Id == 0)
             {
                 movie.DateJoined = DateTime.Now;
+                
                 _context.Movies.Add(movie);
             }
             else
@@ -96,6 +98,7 @@ namespace NetFranco.Controllers
                 movieInDb.ReleaseDate = movie.ReleaseDate;
                 movieInDb.GenreId = movie.GenreId;
                 movieInDb.Stock = movie.Stock;
+                
             }
 
             _context.SaveChanges();

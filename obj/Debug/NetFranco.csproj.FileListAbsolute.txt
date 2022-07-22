@@ -130,3 +130,6 @@ C:\C#\NetFranco\NetFranco\bin\AutoMapper.xml
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.SeedUsers.resources
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddDrivingLicenseToApplicationUser.resources
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddPhoneNumberToApplication.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddRental.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddRentalChanges.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddAvailabilityToMovies.resources

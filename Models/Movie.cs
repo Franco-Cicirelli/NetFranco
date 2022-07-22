@@ -26,8 +26,12 @@ namespace NetFranco.Models
         [Display(Name = "Genre")]
         public byte GenreId { get; set; }
 
+        public int Availability { get; set; }
+
         [Required]
         [Range(1, 20, ErrorMessage = "Please enter a number between 1 to 20")]
         public int Stock { get; set; }
+
+
     }
 }

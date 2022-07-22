@@ -24,6 +24,8 @@ namespace NetFranco.Dtos
 
         public GenreDto Genre { get; set; }
 
+        public int Availability { get; set; }
+
         [Required]
         public int Stock { get; set; }
     }

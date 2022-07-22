@@ -6,6 +6,7 @@ using System.Data.Entity;
 using NetFranco.Models;
 using System.Web.Mvc;
 using NetFranco.ViewModel;
+using System.Runtime.Caching;
 
 namespace NetFranco.Controllers
 {
@@ -89,6 +90,7 @@ namespace NetFranco.Controllers
         
         public ViewResult Index()
         {
+           
             return View();
         }
 

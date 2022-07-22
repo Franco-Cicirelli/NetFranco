@@ -22,14 +22,18 @@ namespace NetFranco.Controllers.API
         }
 
         //GET /api/movies
-        public IHttpActionResult GetMovies()
+        public IEnumerable<MovieDto> GetMovies(string query = null)
         {
-            var movieDtos = _context.Movies
-                .Include(c => c.Genre)
+            var movieQuery = _context.Movies
+                .Include(m => m.Genre)
+                .Where(m => m.Availability > 0);
+
+            if (!String.IsNullOrWhiteSpace(query))
+                movieQuery = movieQuery.Where(m => m.Name.Contains(query));
+
+            return movieQuery
                 .ToList()
                 .Select(Mapper.Map<Movie, MovieDto>);
-
-            return Ok(movieDtos);
         }
 
         //GET /api/movies/1
