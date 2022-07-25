@@ -30,6 +30,10 @@ namespace NetFranco.ViewModel
         [Required]
         public int Stock { get; set; }
 
+        [Range(10, 40, ErrorMessage = "Please entere a number between 10 to 40")]
+        [Required]
+        public int Price { get; set; }
+
         public string FormType {
             get
             {
@@ -48,6 +52,7 @@ namespace NetFranco.ViewModel
             Id = movie.Id;
             Name = movie.Name;
             ReleaseDate = movie.ReleaseDate;
+            Price = movie.Price;
             Stock = movie.Stock;
             GenreId = movie.GenreId;
         }

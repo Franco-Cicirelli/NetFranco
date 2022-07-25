@@ -28,5 +28,9 @@ namespace NetFranco.Dtos
 
         [Required]
         public int Stock { get; set; }
+
+        [Required]
+
+        public int Price { get; set; }
     }
 }

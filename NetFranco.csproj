@@ -272,6 +272,26 @@
     <Compile Include="Migrations\202207212048519_AddAvailabilityToMovies.designer.cs">
       <DependentUpon>202207212048519_AddAvailabilityToMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207251235092_AddingBalanceToMembershipType.cs" />
+    <Compile Include="Migrations\202207251235092_AddingBalanceToMembershipType.designer.cs">
+      <DependentUpon>202207251235092_AddingBalanceToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207251236354_PopulateBalanceMembershipType.cs" />
+    <Compile Include="Migrations\202207251236354_PopulateBalanceMembershipType.designer.cs">
+      <DependentUpon>202207251236354_PopulateBalanceMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207251243512_AddingPriceToMovies.cs" />
+    <Compile Include="Migrations\202207251243512_AddingPriceToMovies.designer.cs">
+      <DependentUpon>202207251243512_AddingPriceToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207251250458_SomeChangesToMoviesPrice.cs" />
+    <Compile Include="Migrations\202207251250458_SomeChangesToMoviesPrice.designer.cs">
+      <DependentUpon>202207251250458_SomeChangesToMoviesPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207251732189_AddingBalanceToCustomers.cs" />
+    <Compile Include="Migrations\202207251732189_AddingBalanceToCustomers.designer.cs">
+      <DependentUpon>202207251732189_AddingBalanceToCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -542,6 +562,7 @@
     <Content Include="Views\Movies\MovieForm.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
     <Content Include="Views\Rentals\New.cshtml" />
+    <Content Include="Views\Rentals\MoviesRented.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -615,6 +636,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207212048519_AddAvailabilityToMovies.resx">
       <DependentUpon>202207212048519_AddAvailabilityToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207251235092_AddingBalanceToMembershipType.resx">
+      <DependentUpon>202207251235092_AddingBalanceToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207251236354_PopulateBalanceMembershipType.resx">
+      <DependentUpon>202207251236354_PopulateBalanceMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207251243512_AddingPriceToMovies.resx">
+      <DependentUpon>202207251243512_AddingPriceToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207251250458_SomeChangesToMoviesPrice.resx">
+      <DependentUpon>202207251250458_SomeChangesToMoviesPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207251732189_AddingBalanceToCustomers.resx">
+      <DependentUpon>202207251732189_AddingBalanceToCustomers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

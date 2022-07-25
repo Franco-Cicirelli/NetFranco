@@ -33,5 +33,10 @@ namespace NetFranco.Models
         public int Stock { get; set; }
 
 
+        [Required]
+        [Range(10,40,ErrorMessage = "Please entere a number between 10 to 40")]
+        public int Price { get; set; }
+
+
     }
 }

@@ -6,6 +6,8 @@
 
 <h2>New Rental Form</h2>
 
+<button class="btn btn-success">@Html.ActionLink("Movies Rented", "MoviesRented", "Rentals")<span class="badge badge-light"></span></button>
+
 <form id="newRental">
     <div class="form-group">
         <label>Customer</label>
@@ -33,6 +35,7 @@
     <button class="btn btn-primary">Submit</button>
 
 </form>
+
     
 
 @section scripts
@@ -41,6 +44,8 @@
     <script>
         $(document).ready(function () {
 
+
+            // Form
             var vm = {
                 movieIds: []
             };
@@ -99,31 +104,7 @@
                 return vm.movieIds.length > 0;
             }, "Please select at least one movie.");
 
-            //$("#newRental").validate({
-            //    submitHandler: function () {
-            //        e.preventDefault();
-
-            //        $.ajax({
-            //            url: "/api/newRentals",
-            //            method: "post",
-            //            data: vm
-            //        })
-            //            .done(function () {
-            //                /*toastr.success("Rentals successfully recorded.");*/
-
-            //                //$("#customer").typeahead("val", "");
-            //                //$("#movie").typeahead("val", "");
-            //                //$("#movies").empty();
-
-            //                //vm = { movieIds: [] };
-
-            //                //validator.resetForm();
-            //            })
-            //            .fail(function () {
-            //                /*toastr.error("Your request could not be recorded.");*/
-            //            })
-            //    }
-            //});
+            
 
             var validator = $("#newRental").validate({
                 submitHandler: function () {

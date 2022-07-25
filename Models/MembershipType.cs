@@ -18,5 +18,6 @@ namespace NetFranco.Models
 
         public static readonly byte UnKnown = 0;
         public static readonly byte PayAsYouGo = 1;
+
     }
 }

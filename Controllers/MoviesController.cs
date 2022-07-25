@@ -27,6 +27,8 @@ namespace NetFranco.Controllers
 
         }
 
+        
+
         public ActionResult Details(int id)
         {
             var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(x => x.Id == id);
@@ -88,6 +90,7 @@ namespace NetFranco.Controllers
             if (movie.Id == 0)
             {
                 movie.DateJoined = DateTime.Now;
+                movie.Availability = movie.Stock;
                 
                 _context.Movies.Add(movie);
             }
@@ -98,7 +101,9 @@ namespace NetFranco.Controllers
                 movieInDb.ReleaseDate = movie.ReleaseDate;
                 movieInDb.GenreId = movie.GenreId;
                 movieInDb.Stock = movie.Stock;
-                
+                movieInDb.Price = movie.Price;
+
+
             }
 
             _context.SaveChanges();

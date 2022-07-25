@@ -25,6 +25,6 @@ namespace NetFranco.Models
         [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }
 
-
+        public int Balance { get; set; }
     }
 }

@@ -133,3 +133,8 @@ C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddPhoneNumberToApplica
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddRental.resources
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddRentalChanges.resources
 C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddAvailabilityToMovies.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddingBalanceToMembershipType.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.PopulateBalanceMembershipType.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddingPriceToMovies.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.SomeChangesToMoviesPrice.resources
+C:\C#\NetFranco\NetFranco\obj\Debug\NetFranco.Migrations.AddingBalanceToCustomers.resources

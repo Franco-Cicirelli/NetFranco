@@ -20,5 +20,7 @@ namespace NetFranco.Dtos
         //[Min18YearsIfAMember]
         public DateTime? BirthDate { get; set; }
         public byte MembershipTypeId { get; set; }
+
+        public int Balance { get; set; }
     }
 }

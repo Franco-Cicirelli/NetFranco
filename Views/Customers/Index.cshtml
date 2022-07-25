@@ -8,16 +8,16 @@
 <button id="customer-new-button" class="btn btn-success text-white">@Html.ActionLink("New", "New", "Customers")</button>
 <br />
 
-    <table id="customers" class="table table-bordered table-hover">
-        <thead>
-        <th>Name</th>
-        <th>Membership Type</th>
-        <th>Delete</th>
-        </thead>
-        <tbody>
-           
-        </tbody>
-    </table>
+<table id="customers" class="table table-bordered table-hover">
+    <thead>
+    <th>Name</th>
+    <th>Membership Type</th>
+    <th>Balance</th>
+    <th>Delete</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
 
 @section scripts
 {
@@ -38,6 +38,9 @@
                         },
                         {
                             data:"membershipType.name"
+                        },
+                        {
+                            data: "balance"
                         },
                         {
                             data: "id",

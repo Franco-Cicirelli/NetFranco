@@ -25,6 +25,7 @@ namespace NetFranco.Controllers
             _context.Dispose();
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var membershipTypes= _context.MembershipTypes.ToList();
@@ -37,6 +38,7 @@ namespace NetFranco.Controllers
             return View("CustomerForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
@@ -52,8 +54,11 @@ namespace NetFranco.Controllers
                 return View("CustomerForm", viewModel);
             }
 
+            AssingBalance(customer);
+           
             if (customer.Id == 0)
             {
+                
                 _context.Customers.Add(customer);
             }
             else
@@ -70,6 +75,25 @@ namespace NetFranco.Controllers
             return RedirectToAction("Index", "Customers");
         }
 
+        // Customer Functions
+        public static int AssingBalance(Customer customer)
+        {
+            var id = (int) customer.MembershipTypeId;
+            int[] balances = new int[] { 100, 300, 500, 1000 };
+
+            for (int i = 0; i < balances.Length ; i++)
+            {
+                if (i == (id-1))
+                {
+                    customer.Balance = balances[i];
+                    return customer.Balance;
+                }
+            }
+
+            return customer.Balance + 1;
+        }
+
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var customer = _context.Customers.SingleOrDefault(x => x.Id == id);
